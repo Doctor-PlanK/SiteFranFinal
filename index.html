@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>IGREJA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="serviços.html">SERVIÇOS</a></li>
+                    <li><a href="https://primeira.org.br/">BLOG</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <div class="search">
+                      
+                    </div>
+                </ul>echo "# siteFran" >> README.md
+                git init
+                git add README.md
+                git commit -m "first commit"
+                git branch -M main
+                git remote add origin https://github.com/JoelsonMB/siteFran.git
+                git push -u origin main
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Bem Vindos <br><span></span></h1>
+            <p class="par"> Aqui na Primeira de Campo Grande 
+                os cultos 
+                acontecem 
+                aos domingos, 
+                às 10h30 e às 18h.
+                .
+                A galera está 
+                sempre se reunindo para 
+                momentos de comunhão
+                 durante a semana.
+                .
+                É muito bom ser Primeira! 
+                Vem fazer parte também!
+                <br>
+                <button class="cn"><a href="#">Saiba mais</a></button>
+                
+                <div class="form">
+                    <h2>Login</h2>
+                    <form action="/login" method="post">
+                        <!-- Adicione os campos de entrada do usuário, como nome de usuário e senha aqui -->
+                        <label for="username">Nome de Usuário:</label>
+                        <input type="text" id="username" name="username" required>
+                        <br>
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                        <br>
+                    </form>
+                    <button class="btnn"><a href="#">Entrar</a></button>
+                    <div class="form2">
+                        <!-- ... (restante do código) ... -->
+                        <p class="link">Não tem conta?<br>
+                            <a href="signup.html" id="signupLink">Sign up</a> Clique aqui
+                        </p>
+                    </div>
+                    <div class="main">
+                        <!-- ... (restante do código) ... -->
+                        <div class="content">
+                            <!-- ... (restante do código) ... -->
+
+                        </div>
+                    </div>
+
+                    <p class="liw">Nossas Redes</p>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/primeiraipcg" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/primeiraipcg" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCQrejOkwUXKlTksN8UBhdzQ"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/es_ipbcg"><i class="fab fa-twitter"></i></a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d28a88efab.js" crossorigin="anonymous"></script>
+    <script>
+        function pesquisar() {
+            var termoPesquisa = document.getElementById("campoPesquisa").value;
+            console.log("Termo de pesquisa:", termoPesquisa);
+            // Adicione aqui a lógica de pesquisa desejada
+        }
+
+        document.getElementById("btnFacebook").addEventListener("click", function() {
+            var urlFacebook = "https://www.facebook.com/primeiraipcg";
+            window.open(urlFacebook, "_blank");
+        });
+
+        document.getElementById("btninstagram").addEventListener("click", function() {
+            var urlInstagram = "https://www.instagram.com/primeiraipcg/";
+            window.open(urlInstagram, "_blank");
+        });
+        document.getElementById("btninstagram").addEventListener("click", function() {
+            var urlyoutube = "https://www.youtube.com/channel/UCQrejOkwUXKlTksN8UBhdzQ";
+            window.open(urlyoutube, "_blank");
+        });
+
+    </script>
+</body>
+</html>
