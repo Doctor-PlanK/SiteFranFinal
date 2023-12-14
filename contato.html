@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <title>IGREJA</title>
-    <link rel="stylesheet" href="./contato.html" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
     <div class="main">
-      <div class="navbar">
-        <div class="icon">
-          <h2 class="logo"></h2>
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="serviços.html">SERVIÇOS</a></li>
+                    <li><a href="https://primeira.org.br/">BLOG</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <div class="search">
+                      
+                    </div>
+                
+            </div>
         </div>
-        <div class="menu">
-          <ul>
-              <li><a href="index.html">HOME</a></li>
-          </ul>
-              <h6>(27) 3336-9445</h6> 
-          </ul>
+
+        <div class="content">
+            <h1>Bem Vindos <br><span></span></h1>
+            <p class="par"> Aqui na Primeira de Campo Grande 
+                os cultos 
+                acontecem 
+                aos domingos, 
+                às 10h30 e às 18h.
+                .
+                A galera está 
+                sempre se reunindo para 
+                momentos de comunhão
+                 durante a semana.
+                .
+                É muito bom ser Primeira! 
+                Vem fazer parte também!
+                <br>
+                <button class="cn"><a href="#">Saiba mais</a></button>
+                
+                
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+
+    <script src="https://kit.fontawesome.com/d28a88efab.js" crossorigin="anonymous"></script>
+    <script>
+        function pesquisar() {
+            var termoPesquisa = document.getElementById("campoPesquisa").value;
+            console.log("Termo de pesquisa:", termoPesquisa);
+            // Adicione aqui a lógica de pesquisa desejada
+        }
+
+        document.getElementById("btnFacebook").addEventListener("click", function() {
+            var urlFacebook = "https://www.facebook.com/primeiraipcg";
+            window.open(urlFacebook, "_blank");
+        });
+
+        document.getElementById("btninstagram").addEventListener("click", function() {
+            var urlInstagram = "https://www.instagram.com/primeiraipcg/";
+            window.open(urlInstagram, "_blank");
+        });
+        document.getElementById("btninstagram").addEventListener("click", function() {
+            var urlyoutube = "https://www.youtube.com/channel/UCQrejOkwUXKlTksN8UBhdzQ";
+            window.open(urlyoutube, "_blank");
+        });
+
+    </script>
+</body>
 </html>

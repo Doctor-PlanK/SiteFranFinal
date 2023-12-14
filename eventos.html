@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGREJA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Formulário para criar eventos -->
+    
+    <div class="event-form">
+        <h2>Criar Novo Evento</h2>
+        <form id="createEventForm">
+            <label for="eventTitle">Título:</label>
+            <input type="text" id="eventTitle" name="eventTitle" required>
+
+            <label for="eventDescription">Descrição:</label>
+            <textarea id="eventDescription" name="eventDescription" required></textarea>
+
+            <label for="eventStartDate">Data de Início:</label>
+            <input type="date" id="eventStartDate" name="eventStartDate" required>
+
+            <label for="eventEndDate">Data do Fim:</label>
+            <input type="date" id="eventEndDate" name="eventEndDate" required>
+
+            <button type="button" onclick="createEvent()">Criar Evento</button>
+        </form>
+    </div>
+
+    <!-- Lista de eventos -->
+    <ul class="event-list" id="eventList">
+        <!-- Aqui serão exibidos os eventos existentes -->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<body>
+    <!-- ... (seu código existente) ... -->
+
+    <div class="events">
+        <h2>Eventos</h2>
+
+        <ul class="event-list">
+            <!-- Aqui serão exibidos os eventos existentes -->
+            <li>
+                <h3>Título do Evento</h3>
+                <p>Descrição do Evento.</p>
+                <p>Data de Início: 01/01/2023</p>
+                <p>Data do Fim: 03/01/2023</p>
+            </li>
+            <!-- Adicione mais itens conforme necessário -->
+        </ul>
+
+        <div class="event-form">
+            <h2>Cadastrar Novo Evento</h2>
+            <form action="#" method="post" id="eventForm">
+                <label for="eventTitle">Título:</label>
+                <input type="text" id="eventTitle" name="eventTitle" required>
+
+                <label for="eventDescription">Descrição:</label>
+                <textarea id="eventDescription" name="eventDescription" required></textarea>
+
+                <label for="eventStartDate">Data de Início:</label>
+                <input type="date" id="eventStartDate" name="eventStartDate" required>
+
+                <label for="eventEndDate">Data do Fim:</label>
+                <input type="date" id="eventEndDate" name="eventEndDate" required>
+
+                <button type="button" onclick="saveEvent()">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
